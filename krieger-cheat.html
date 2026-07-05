@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krieger Private Cheat | KRIEGER</title>
+    <link rel="icon" type="image/png" href="images/krieger-logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 
+                        sans: ['Rajdhani', 'sans-serif'],
+                        display: ['Bebas Neue', 'sans-serif']
+                    },
+                    colors: {
+                        krieger: {
+                            black: '#0a0a0a',
+                            dark: '#1a1a1a',
+                            gray: '#2a2a2a',
+                            light: '#e5e5e5',
+                            white: '#ffffff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-krieger-black text-krieger-light font-sans antialiased selection:bg-white selection:text-black">
+
+    <!-- Militärisches Hintergrund-Muster -->
+    <div class="fixed inset-0 z-0 pointer-events-none opacity-[0.03]">
+        <div class="absolute inset-0 military-pattern"></div>
+    </div>
+
+    <!-- Navigation (IDENTISCH zur index.html!) -->
+    <nav class="fixed w-full z-40 bg-krieger-black/95 backdrop-blur-md border-b-2 border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-4">
+                    <img src="images/krieger-logo.png" alt="KRIEGER" class="h-14 w-14 object-contain">
+                    <div>
+                        <span class="font-display text-4xl font-bold text-white tracking-widest">KRIEGER</span>
+                        <div class="text-xs text-gray-500 tracking-[0.3em]">PREMIUM ACCOUNTS</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-12">
+                    <a href="index.html" class="hover:text-white transition-colors font-bold text-lg tracking-widest border-b-2 border-transparent hover:border-white pb-1">PRODUKTE</a>
+                    <a href="krieger-cheat.html" class="hover:text-white transition-colors font-bold text-lg tracking-widest border-b-2 border-white pb-1">KRIEGER PRIVATE CHEAT</a>
+                </div>
+                <button class="relative p-3 hover:bg-white/10 rounded-lg transition-all group border-2 border-white/20 hover:border-white/40" onclick="toggleCart()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span id="cart-count" class="absolute -top-3 -right-3 bg-white text-black text-xs font-bold rounded-full h-7 w-7 flex items-center justify-center transform scale-0 transition-transform duration-200 border-2 border-krieger-black font-display">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex justify-center gap-3 mb-8">
+            <div class="w-16 h-0.5 bg-white/30"></div>
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div class="w-16 h-0.5 bg-white/30"></div>
+        </div>
+
+        <div class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-white/5 text-sm text-white mb-10 border-2 border-white/20 font-bold tracking-[0.2em]">
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+            </span>
+            EXKLUSIV & HOCHMODERN
+        </div>
+        
+        <h1 class="font-display text-8xl md:text-[10rem] font-bold tracking-tight text-white mb-8 leading-none">
+            KRIEGER<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600">PRIVATE CHEAT</span>
+        </h1>
+        
+        <p class="mt-6 max-w-2xl mx-auto text-xl text-gray-400 mb-12 leading-relaxed tracking-wide">
+            Unser exklusiver Private Cheat bietet dir unübertroffene Vorteile.<br>
+            Undetected, sicher und ständig aktualisiert für maximale Performance.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#cheats" class="px-10 py-5 bg-white hover:bg-gray-200 text-black font-bold rounded-lg transition-all hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] flex items-center justify-center gap-3 font-display text-xl tracking-widest border-2 border-white">
+                JETZT KAUFEN
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <a href="#features" class="px-10 py-5 bg-transparent hover:bg-white/10 text-white font-bold rounded-lg transition-all border-2 border-white/30 hover:border-white/60 font-display text-xl tracking-widest">
+                FEATURES
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 relative bg-krieger-dark/30 border-t-2 border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-5xl md:text-6xl font-bold text-white mb-6 tracking-widest">FEATURES</h2>
+                <div class="w-24 h-1 bg-white/30 mx-auto mb-6"></div>
+                <p class="text-gray-400 text-lg tracking-wide">Warum Krieger Private Cheat die beste Wahl ist</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-krieger-gray/30 rounded-lg p-10 border-2 border-white/10 hover:border-white/40 transition-all">
+                    <div class="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6 text-white mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4 tracking-wider text-center">UNDETECTED</h3>
+                    <p class="text-gray-400 leading-relaxed text-center">Unser Cheat wird ständig aktualisiert und bleibt unentdeckt. Maximale Sicherheit garantiert.</p>
+                </div>
+
+                <div class="bg-krieger-gray/30 rounded-lg p-10 border-2 border-white/10 hover:border-white/40 transition-all">
+                    <div class="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6 text-white mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4 tracking-wider text-center">HOHE PERFORMANCE</h3>
+                    <p class="text-gray-400 leading-relaxed text-center">Optimierter Code für beste Performance ohne Lag oder Performance-Einbußen.</p>
+                </div>
+
+                <div class="bg-krieger-gray/30 rounded-lg p-10 border-2 border-white/10 hover:border-white/40 transition-all">
+                    <div class="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mb-6 text-white mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4 tracking-wider text-center">AUTO-UPDATES</h3>
+                    <p class="text-gray-400 leading-relaxed text-center">Automatische Updates stellen sicher, dass du immer die neueste Version hast.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 relative border-t-2 border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-5xl md:text-6xl font-bold text-white mb-6 tracking-widest">PREISE</h2>
+                <div class="w-24 h-1 bg-white/30 mx-auto mb-6"></div>
+                <p class="text-gray-400 text-lg tracking-wide">Wähle dein perfektes Paket</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Wochenzugang -->
+                <div class="bg-krieger-gray/30 rounded-lg p-8 border-2 border-white/10 hover:border-white/40 transition-all">
+                    <h3 class="font-display text-2xl font-bold text-white mb-4 tracking-wider text-center">WOCHENZUGANG</h3>
+                    <div class="text-center mb-6">
+                        <span class="font-display text-5xl font-bold text-white">29,99 €</span>
+                        <span class="text-gray-400 block mt-2">Wochen Key</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Vollzugriff für 7 Tage</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Alle Features inklusive</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Priority Support</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Frühe Feature-Updates</span>
+                        </li>
+                    </ul>
+                    <button onclick="addCheatToCart('Krieger Private Cheat - Wochenzugang', 29.99, 'images/cheat.jpg')" class="w-full py-4 bg-transparent hover:bg-white/10 text-white font-bold rounded-lg transition-all border-2 border-white/30 font-display tracking-widest">
+                        IN DEN WARENKORB
+                    </button>
+                </div>
+
+                <!-- Monatszugang -->
+                <div class="bg-krieger-gray/30 rounded-lg p-8 border-2 border-white/40 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-1 rounded font-display font-bold tracking-wider text-sm">BELIEBT</div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-4 tracking-wider text-center">MONATSZUGANG</h3>
+                    <div class="text-center mb-6">
+                        <span class="font-display text-5xl font-bold text-white">79,99 €</span>
+                        <span class="text-gray-400 block mt-2">Monats Key</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Vollzugriff für 30 Tage</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Alle Features inklusive</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>VIP Support</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300">
+                            <svg class="w-5 h-5 text-white flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Bestes Preis-Leistungs-Verhältnis</span>
+                        </li>
+                    </ul>
+                    <button onclick="addCheatToCart('Krieger Private Cheat - Monatszugang', 79.99, 'images/cheat.jpg')" class="w-full py-4 bg-white hover:bg-gray-200 text-black font-bold rounded-lg transition-all font-display tracking-widest border-2 border-white">
+                        IN DEN WARENKORB
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t-2 border-white/10 bg-krieger-black py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <img src="images/krieger-logo.png" alt="KRIEGER" class="h-10 w-10 object-contain">
+                <span class="font-display font-bold text-2xl text-white tracking-widest">KRIEGER</span>
+            </div>
+            <div class="text-gray-500 text-sm tracking-wide">
+                &copy; 2026 KRIEGER. Alle Rechte vorbehalten. | <a href="#" class="hover:text-white transition-colors">Impressum</a> | <a href="#" class="hover:text-white transition-colors">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Warenkorb Overlay & Panel (IDENTISCH zur index.html!) -->
+    <div id="cart-overlay" class="fixed inset-0 bg-black/95 backdrop-blur-md z-50 opacity-0 pointer-events-none transition-opacity duration-300" onclick="toggleCart()"></div>
+
+    <div id="cart-panel" class="fixed top-0 right-0 h-full w-full max-w-md bg-krieger-black/98 backdrop-blur-xl border-l-2 border-white/20 z-50 transform translate-x-full transition-transform duration-300 ease-out flex flex-col">
+        
+        <div class="flex items-center justify-between p-6 border-b-2 border-white/10">
+            <div class="flex items-center gap-3">
+                <div class="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center text-white border-2 border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white font-display tracking-wider">WARENKORB</h2>
+                    <p class="text-sm text-gray-400"><span id="cart-items-count">0</span> Artikel</p>
+                </div>
+            </div>
+            <button onclick="toggleCart()" class="p-2 hover:bg-white/10 rounded-lg transition-colors text-gray-400 hover:text-white border border-transparent hover:border-white/20">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+
+        <div id="cart-empty" class="flex-1 flex flex-col items-center justify-center p-6 text-center hidden">
+            <div class="w-24 h-24 bg-white/10 rounded-lg flex items-center justify-center mb-6 border-2 border-white/20">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            </div>
+            <h3 class="text-3xl font-bold text-white mb-3 font-display tracking-wider">WARENKORB LEER</h3>
+            <p class="text-gray-400 mb-8">Füge Produkte hinzu, um fortzufahren.</p>
+            <button onclick="toggleCart()" class="px-10 py-4 bg-white hover:bg-gray-200 text-black font-bold rounded-lg transition-all font-display text-xl tracking-widest border-2 border-white">
+                ZUM SHOP
+            </button>
+        </div>
+
+        <div id="cart-footer" class="border-t-2 border-white/10 p-6 bg-krieger-dark/50">
+            <div class="flex justify-between items-center mb-6">
+                <span class="text-gray-400 text-lg tracking-wider">Gesamtsumme</span>
+                <div class="text-right">
+                    <div class="text-4xl font-bold text-white font-display" id="cart-total">0,00 €</div>
+                </div>
+            </div>
+            <button id="checkout-btn" onclick="checkout()" class="w-full py-5 bg-white hover:bg-gray-200 text-black font-bold rounded-lg transition-all shadow-lg shadow-white/20 flex items-center justify-center gap-3 text-xl font-display tracking-widest border-2 border-white hover:border-gray-300">
+                ZUR KASSE
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-krieger-dark border-2 border-white/20 text-white px-6 py-4 rounded-lg shadow-2xl transform translate-y-24 transition-transform duration-300 flex items-center gap-3 z-[60]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <div>
+            <h4 class="font-bold text-sm font-display tracking-wider">ERFOLGREICH</h4>
+            <p class="text-xs text-gray-400" id="toast-message">Produkt wurde zum Warenkorb hinzugefügt.</p>
+        </div>
+    </div>
+
+    <script src="js/cheat-cart.js"></script>
+</body>
+</html>
